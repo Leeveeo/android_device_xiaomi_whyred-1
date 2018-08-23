@@ -71,7 +71,6 @@ vendor/lib/libmmcamera_interface.so
 vendor/lib/libmmjpeg_interface.so
 vendor/lib/libqomx_core.so
 vendor/lib/lib_lowlight.so
-vendor/lib/libarcsoft_beauty_shot.so
 vendor/lib/libarcsoft_beautyshot.so
 vendor/lib/libchromaflash.so
 vendor/lib/libFaceGrade.so
@@ -158,13 +157,10 @@ vendor/firmware/cpp_firmware_v1_5_0.fw
 vendor/firmware/cpp_firmware_v1_5_2.fw
 vendor/firmware/cpp_firmware_v1_6_0.fw
 vendor/firmware/cpp_firmware_v1_8_0.fw
-vendor/lib/libarcsoft_portrait_editing.so
 vendor/lib/libcamera_scene.so
-vendor/lib/libfit_face_beauty.so
 vendor/lib/libgnustl_shared.so
 lib64/libgnustl_shared.so
 vendor/lib/libSNPE.so
-lib64/libSNPE.so
 vendor/lib/libsymphony-cpu.so
 vendor/lib/libsymphonypower.so
 vendor/lib/libVDClearShot.so
@@ -301,7 +297,7 @@ framework/izat.xt.srv.jar
 -vendor/lib64/libloc_api_v02.so
 vendor/lib64/libloc_ds_api.so
 vendor/lib64/libloc_externalDr.so
--priv-app/com.qualcomm.location/com.qualcomm.location.apk
+#-priv-app/com.qualcomm.location/com.qualcomm.location.apk
 vendor/lib64/libalarmservice_jni.so
 vendor/lib64/libdataitems.so
 vendor/lib64/libdrplugin_client.so
@@ -383,50 +379,61 @@ vendor/firmware/a512_zap.elf
 vendor/firmware/a512_zap.mdt
 
 # IMS
+-app/ims/ims.apk
+-app/imssettings/imssettings.apk
 vendor/bin/ims_rtp_daemon
 vendor/bin/imsdatadaemon
 vendor/bin/imsqmidaemon
 vendor/bin/imsrcsd
-etc/permissions/com.qualcomm.qti.imscmservice.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice.xml|224f091964d59a33c82eab55cb1612cfdee99d25
-etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml:vendor/etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml|dcdd5e8236d433c2810cea30241423906e697782
-etc/permissions/qti-vzw-ims-internal.xml:vendor/etc/permissions/qti-vzw-ims-internal.xml
-framework/com.qualcomm.qti.imscmservice@1.0-java.jar:vendor/framework/com.qualcomm.qti.imscmservice@1.0-java.jar
-framework/com.qualcomm.qti.imscmservice@1.1-java.jar:vendor/framework/com.qualcomm.qti.imscmservice@1.1-java.jar
+etc/permissions/com.qualcomm.qti.imscmservice.xml
+etc/permissions/com.qualcomm.qti.imscmservice_1_1.xml
+etc/permissions/qti-vzw-ims-internal.xml
+framework/com.qualcomm.qti.imscmservice@1.0-java.jar
+framework/com.qualcomm.qti.imscmservice@1.1-java.jar
 vendor/framework/qti-vzw-ims-internal.jar
-lib/com.qualcomm.qti.imscmservice@1.0.so:vendor/lib/com.qualcomm.qti.imscmservice@1.0.so
-lib64/com.qualcomm.qti.imscmservice@1.0.so:vendor/lib64/com.qualcomm.qti.imscmservice@1.0.so
-lib64/com.qualcomm.qti.imscmservice@1.1.so:vendor/lib64/com.qualcomm.qti.imscmservice@1.1.so
-lib/vendor.qti.imsrtpservice@1.0.so:vendor/lib/vendor.qti.imsrtpservice@1.0.so
-lib64/vendor.qti.imsrtpservice@1.0.so:vendor/lib64/vendor.qti.imsrtpservice@1.0.so
+lib/com.qualcomm.qti.imscmservice@1.0.so
+lib64/com.qualcomm.qti.imscmservice@1.0.so
+lib/com.qualcomm.qti.imscmservice@1.1.so
+lib64/com.qualcomm.qti.imscmservice@1.1.so
+lib/vendor.qti.imsrtpservice@1.0.so
+lib64/vendor.qti.imsrtpservice@1.0.so
+vendor/lib/lib-dplmedia.so
 vendor/lib64/lib-dplmedia.so
+vendor/lib/lib-imsdpl.so
 vendor/lib64/lib-imsdpl.so
+vendor/lib/lib-imsqimf.so
 vendor/lib64/lib-imsqimf.so
+vendor/lib/lib-imsrcs-v2.so
 vendor/lib64/lib-imsrcs-v2.so
+vendor/lib/lib-imscmservice.so
 vendor/lib64/lib-imscmservice.so
+vendor/lib/lib-imsxml.so
 vendor/lib64/lib-imsxml.so
+vendor/lib/lib-rtpcommon.so
 vendor/lib64/lib-rtpcommon.so
+vendor/lib/lib-rtpcore.so
 vendor/lib64/lib-rtpcore.so
+vendor/lib/lib-rtpdaemoninterface.so
 vendor/lib64/lib-rtpdaemoninterface.so
+vendor/lib/lib-rtpsl.so
 vendor/lib64/lib-rtpsl.so
--app/ims/ims.apk:vendor/app/ims/ims.apk|3e4ef63b336099e172202ea8f7a19151e44cc4e8
--app/imssettings/imssettings.apk:vendor/app/imssettings/imssettings.apk|8a453ddf6adeb13d291f19bf09567207a267754b
-lib64/lib-imscamera.so:vendor/lib64/lib-imscamera.so
-lib64/lib-imsvideocodec.so:vendor/lib64/lib-imsvideocodec.so
-lib64/lib-imsvt.so:vendor/lib64/lib-imsvt.so
-lib64/lib-imsvtextutils.so:vendor/lib64/lib-imsvtextutils.so
-lib64/lib-imsvtutils.so:vendor/lib64/lib-imsvtutils.so
-lib64/libimsmedia_jni.so:vendor/lib64/libimsmedia_jni.so
-lib64/libimscamera_jni.so:vendor/lib64/libimscamera_jni.so
-lib/lib-imscamera.so:vendor/lib/lib-imscamera.so
-lib/lib-imsvideocodec.so:vendor/lib/lib-imsvideocodec.so
-lib/lib-imsvtextutils.so:vendor/lib/lib-imsvtextutils.so
-lib/lib-imsvtutils.so:vendor/lib/lib-imsvtutils.so
-lib/libimscamera_jni.so:vendor/lib/libimscamera_jni.so
-lib/libimsmedia_jni.so:vendor/lib/libimsmedia_jni.so
-lib/libmmrtpdecoder.so:vendor/lib/libmmrtpdecoder.so
-lib/libmmrtpencoder.so:vendor/lib/libmmrtpencoder.so
-lib64/libmmrtpdecoder.so:vendor/lib64/libmmrtpdecoder.so
-lib64/libmmrtpencoder.so:vendor/lib64/libmmrtpencoder.so
+lib/lib-imscamera.so
+lib64/lib-imscamera.so
+lib/lib-imsvideocodec.so
+lib64/lib-imsvideocodec.so
+lib/lib-imsvtextutils.so
+lib64/lib-imsvtextutils.so
+lib/lib-imsvtutils.so
+lib64/lib-imsvtutils.so
+lib/libimsmedia_jni.so
+lib64/libimsmedia_jni.so
+lib/libimscamera_jni.so
+lib64/libimscamera_jni.so
+lib/libmmrtpdecoder.so
+lib64/libmmrtpdecoder.so
+lib/libmmrtpencoder.so
+lib64/libmmrtpencoder.so
+lib64/lib-imsvt.so
 
 # Fingerprint
 vendor/firmware/fpctzappfingerprint.b00
@@ -543,7 +550,7 @@ etc/permissions/qcrilhook.xml
 etc/permissions/qti_libpermissions.xml
 framework/embmslibrary.jar
 -framework/qcrilhook.jar
-#framework/qti-telephony-common.jar|16fea87b7019a512cd8fd0e51ed6c28d
+#framework/qti-telephony-common.jar
 -priv-app/qcrilmsgtunnel/qcrilmsgtunnel.apk
 vendor/bin/qti
 vendor/lib64/libconfigdb.so
@@ -760,9 +767,9 @@ vendor/lib64/libperfgluelayer.so
 
 vendor/Diag.cfg
 -vendor/app/CABLService/CABLService.apk
--vendor/app/PowerOffAlarm/PowerOffAlarm.apk
--vendor/app/QDMA-UI/QDMA-UI.apk
--vendor/app/QDMA/QDMA.apk
+#-vendor/app/PowerOffAlarm/PowerOffAlarm.apk
+#-vendor/app/QDMA-UI/QDMA-UI.apk
+#-vendor/app/QDMA/QDMA.apk
 -vendor/app/QFingerprintService/QFingerprintService.apk
 -vendor/app/Qmmi/Qmmi.apk
 -vendor/app/SVIService/SVIService.apk
@@ -979,16 +986,6 @@ vendor/lib/hw/com.qualcomm.qti.bluetooth_audio@1.0-impl.so
 vendor/lib/hw/fingerprint.goodix.default.so
 vendor/lib64/hw/fingerprint.default.so
 vendor/lib/hw/thermal.sdm660.so
-vendor/lib/lib-dplmedia.so
-vendor/lib/lib-imscmservice.so
-vendor/lib/lib-imsdpl.so
-vendor/lib/lib-imsqimf.so
-vendor/lib/lib-imsrcs-v2.so
-vendor/lib/lib-imsxml.so
-vendor/lib/lib-rtpcommon.so
-vendor/lib/lib-rtpcore.so
-vendor/lib/lib-rtpdaemoninterface.so
-vendor/lib/lib-rtpsl.so
 vendor/lib/lib-uceservice.so
 vendor/lib/libAlacSwDec.so
 vendor/lib/libApeSwDec.so
@@ -1080,7 +1077,6 @@ vendor/lib/liblowi_wifihal.so
 vendor/lib/liblqe.so
 vendor/lib/libmdsprpc.so
 vendor/lib/libmfido.so
-vendor/lib/libmicamera.ic.so
 vendor/lib/libmlipay.so
 vendor/lib/libmm-color-convertor.so
 vendor/lib/libmm-disp-apis.so
@@ -1326,7 +1322,7 @@ etc/permissions/telephonyservice.xml
 etc/permissions/privapp-permissions-qti.xml
 
 #Additional blobs
--app/QtiSystemService/QtiSystemService.apk
+#-app/QtiSystemService/QtiSystemService.apk
 
 lib/com.qualcomm.qti.ant@1.0.so
 
